@@ -520,7 +520,7 @@ function App() {
           <p className="sidebar-section-label" style={{marginTop:'12px'}}>Colecciones</p>
           <div className="sidebar-menu">
             {itemSets.map(s => (
-              <button key={s.id} className={`sidebar-item ${activeSet===s.id?'active':''}`} onClick Papirujas={()=>{setActiveSet(s.id); setPage("inventory");}}>
+              <button key={s.id} className={`sidebar-item ${activeSet===s.id?'active':''}`} onClick={()=>{setActiveSet(s.id); setPage("inventory");}}>
                 📁 {s.name}
               </button>
             ))}
